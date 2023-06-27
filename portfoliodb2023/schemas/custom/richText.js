@@ -15,16 +15,9 @@ export default {
       },
     },
     {
-        type: 'code',
-        options: {
-            withFilename: true,
-            languageAlternatives: [
-                {title: 'JavaScript', value: 'javascript'},
-                {title: 'HTML', value: 'html'},
-                {title: 'CSS', value: 'css'},
-            ]
-        }
+        type: 'CustomCode',
     },
+    
   ],
   validation: (Rule) => Rule.required().min(1).max(10),
 }
