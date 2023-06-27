@@ -1,7 +1,7 @@
 
 const SidebarList = (S) => {
     return S.list()
-        .title('Loda Lasson Blog')
+        .title('Allan\'s Portfolio')
         .items([
             S.listItem()
                 .title('Featured Blogs')
