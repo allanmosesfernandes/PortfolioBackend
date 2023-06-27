@@ -5,4 +5,5 @@ import customImage from './custom/customImage'
 import customCode from './custom/customCode'
 import customExcerpt from './custom/customExcerpt'
 import categories from './categories'
-export const schemaTypes = [ projects, blog, customImage, richText,customCode,customExcerpt, categories ]
+import featured from './featured'
+export const schemaTypes = [ projects, blog, customImage, richText,customCode,customExcerpt, categories ,featured]
