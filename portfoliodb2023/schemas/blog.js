@@ -50,7 +50,14 @@ export default defineType({
             description: 'Content of the blog',
             validation: Rule => Rule.required()
         }),
-
+        defineField({
+            title: 'Categories',
+            name: 'categories',
+            type: 'array',
+            of: [{ type: 'reference', to: [{ type: 'Categories' }] }],
+            description: 'Categories of the blog',
+            validation: Rule => Rule.required()
+        }),  
     ],
     preview: {
         select: {
