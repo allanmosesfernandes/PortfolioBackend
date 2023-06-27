@@ -33,14 +33,10 @@ export default defineType({
         defineField({
             title: 'Cover Image',
             name: 'coverImage',
-            type: 'image',
+            type: 'CustomImage',
             description: 'Cover image of the blog',
-            options: {
-                hotspot: true
-            }, 
             validation: Rule => Rule.required()
         }),
-        
 
     ],
 })
