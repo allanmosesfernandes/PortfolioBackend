@@ -17,7 +17,7 @@ export default {
     {
         type: 'CustomCode',
     },
-    
+     
   ],
   validation: (Rule) => Rule.required().min(1).max(10),
 }

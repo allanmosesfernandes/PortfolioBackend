@@ -38,13 +38,19 @@ export default defineType({
             validation: Rule => Rule.required()
         }),
         defineField({
+            title: 'Excerpt',
+            name: 'excerpt',
+            type: 'CustomExcerpt',
+            description: 'Excerpt of the blog',
+        }),
+        defineField({
             title: 'Content',
             name: 'content',
             type: 'richText',
             description: 'Content of the blog',
             validation: Rule => Rule.required()
         }),
-        
+
     ],
     preview: {
         select: {
