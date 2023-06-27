@@ -37,6 +37,27 @@ export default defineType({
             description: 'Cover image of the blog',
             validation: Rule => Rule.required()
         }),
-
+        defineField({
+            title: 'Content',
+            name: 'content',
+            type: 'richText',
+            description: 'Content of the blog',
+            validation: Rule => Rule.required()
+        }),
+        
     ],
+    preview: {
+        select: {
+            image: 'coverImage',
+            title: 'Title',
+            publishedDate: 'publishedDate'
+        },
+        prepare({ title, publishedDate, image }) {
+            return {
+                title,
+                subtitle: publishedDate.trim().split('T')[0],
+                media: image
+            }
+        }
+    }
 })
